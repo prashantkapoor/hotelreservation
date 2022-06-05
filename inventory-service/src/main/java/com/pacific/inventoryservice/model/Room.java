@@ -17,8 +17,8 @@ public class Room {
 	private boolean available;
 	private Long baseCharge;
 	
-	@OneToMany(fetch = FetchType.EAGER)
-	private List<Service> services;
+	//@OneToMany(fetch = FetchType.LAZY)
+	//private List<Service> services;
 	
 	public Long getBaseCharge() {
 		return baseCharge;
@@ -45,11 +45,11 @@ public class Room {
 	public void setAvailable(boolean available) {
 		this.available = available;
 	}
-	public List<Service> getServices() {
+	/*public List<Service> getServices() {
 		return services;
 	}
 	public void setServices(List<Service> services) {
 		this.services = services;
-	}
+	}*/
 	
 }

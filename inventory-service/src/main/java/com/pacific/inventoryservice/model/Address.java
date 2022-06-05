@@ -8,17 +8,22 @@ public class Address {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	String addressId;
+	String id;
 
 	String address;
 	String state;
 	String country;
 	String city;
+	
+	@OneToOne(mappedBy = "address")
+    private Hotel hotel;
+	
+	
 	public String getAddressId() {
-		return addressId;
+		return id;
 	}
 	public void setAddressId(String addressId) {
-		this.addressId = addressId;
+		this.id = addressId;
 	}
 	public String getAddress() {
 		return address;

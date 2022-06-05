@@ -9,7 +9,9 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -24,9 +26,12 @@ public class Hotel {
 	
 	private String description;
 	
+	@OneToOne(fetch=FetchType.EAGER)
+	@JoinColumn(referencedColumnName = "id")
 	private Address address;
 	
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinColumn(name = "hotelId")
 	private List<Room> rooms;
 	
 	public String getHotelId() {
