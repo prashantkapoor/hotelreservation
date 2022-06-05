@@ -1,0 +1,9 @@
+package com.pacific.inventoryservice.model;
+
+public class Room {
+
+	private String roomId;
+	private Category type;
+	private boolean available;
+	private List<Service> services;
+}

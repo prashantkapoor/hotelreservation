@@ -1,0 +1,19 @@
+package com.pacific.inventoryservice.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class InventoryController {
+
+	//get list of rooms by hotel id, of a specific category
+	//get list of standard services attached to each room
+	//admin privileges
+	//update room 
+	//add new room
+	//delete room
+	
+	@GetMapping
+	public ResponseEntity<Room>
+}

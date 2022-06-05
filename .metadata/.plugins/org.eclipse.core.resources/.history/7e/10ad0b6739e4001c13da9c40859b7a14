@@ -1,0 +1,14 @@
+package com.pacific.inventoryservice.service;
+
+import java.util.List;
+
+import com.pacific.inventoryservice.model.Room;
+
+public class InventoryService {
+
+	public List<Room> getRoomsInHotel(String hotelId, String category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

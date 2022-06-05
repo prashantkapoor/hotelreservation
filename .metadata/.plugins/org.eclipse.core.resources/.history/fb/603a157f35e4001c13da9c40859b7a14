@@ -1,0 +1,5 @@
+package com.pacific.inventoryservice.service;
+
+public class InventoryService {
+
+}

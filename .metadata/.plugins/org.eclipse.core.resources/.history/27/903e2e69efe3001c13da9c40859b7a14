@@ -1,0 +1,12 @@
+package com.pacific.inventoryservice.model;
+
+import java.util.List;
+
+public class Room {
+
+	private String roomId;
+	private Category type;
+	private boolean available;
+	private List<Service> services;
+	
+}

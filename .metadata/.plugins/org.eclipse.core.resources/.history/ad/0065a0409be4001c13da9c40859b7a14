@@ -1,0 +1,18 @@
+package com.pacific.inventoryservice.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="address")
+public class Address {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	String addressId;
+
+	String address;
+	String state;
+	String country;
+	String city;
+	
+}

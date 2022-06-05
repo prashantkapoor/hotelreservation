@@ -1,0 +1,9 @@
+package com.pacific.inventoryservice.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class InventoryController {
+
+	//get list of rooms
+}

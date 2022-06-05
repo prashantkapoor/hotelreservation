@@ -1,0 +1,19 @@
+package com.pacific.userservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.pacific.userservice.model.User;
+import com.pacific.userservice.service.UserService;
+
+@RestController("/user")
+public class UserController{
+	
+	@Autowired
+	UserService userService;
+
+	public ResponseEntity<?> add(User user){
+		
+	}
+}
