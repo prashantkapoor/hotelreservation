@@ -1,8 +1,0 @@
-package com.pacific.inventoryservice.model;
-
-public class Service {
-
-	private Integer serviceId;
-	private String name;
-	private 
-}

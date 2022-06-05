@@ -1,5 +1,0 @@
-package com.pacific.inventoryservice.repository;
-
-public class InventoryRepository {
-
-}
